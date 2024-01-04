@@ -458,6 +458,98 @@ footer {
   }
 
   .menu ul li {
-    list
+    list-style: none;
+    margin: 20px;
+    border-top: 3px solid white;
+    width: 80%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    padding-top: 10px;
+    color: white;
+    font-weight: 900;
+  }
+
+  .menu ul i a:hover {
+    color: rgb(240, 197, 6);
+  }
+
+  .img-slider {
+    display: flex;
+    float: left;
+    position: relative;
+    width: 80%;
+    height: 60%;
+    animation-name: slide1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+
+  .section1 {
+    width: 80%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  .heading1 {
+    opacity: 1;
+    position: relative;
+    bottom: 8px;
+  }
+
+  .search a {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .heading1 .ham {
+    background-color: black;
+    color: white;
+  }
+
+  #input {
+    width: 200px;
+    flex-shrink: 2;
+  }
+
+  header {
+    height: 150px;
+  }
+}
+
+@media scree and (max-width: 550px) {
+  .heading ul li {
+    display: none;
+  }
+
+  .heading1 {
+    opacity: 1;
+    bottom: 8px;
+  }
+
+  header {
+    height: 250px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #input {
+    width: 150px;
+  }
+
+  .close {
+    z-index: 34;
+  }
+
+  .search a {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
